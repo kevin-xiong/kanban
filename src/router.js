@@ -5,9 +5,9 @@ const routers = [
         component: (resolve) => require(['./views/index.vue'], resolve)
     },
     {
-        path: '/',
+        path: '/login',
         meta: {title: ''},
-        component: (resolve) => require(['./views/index.vue'], resolve)
+        component: (resolve) => require(['./views/pages/login/login.vue'], resolve)
     }
 ];
 export default routers;

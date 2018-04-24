@@ -43,7 +43,7 @@
     export default {
         methods: {
             handleStart () {
-                
+                this.$router.push('/login')
             }
         }
     }

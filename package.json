@@ -19,9 +19,10 @@
   },
   "homepage": "https://github.com/kevin-xiong/kanban",
   "dependencies": {
+    "iview": "^2.0.0-rc.8",
+    "mongoose": "^5.0.16",
     "vue": "^2.2.6",
-    "vue-router": "^2.2.1",
-    "iview": "^2.0.0-rc.8"
+    "vue-router": "^2.2.1"
   },
   "devDependencies": {
     "autoprefixer-loader": "^2.0.0",
