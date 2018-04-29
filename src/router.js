@@ -1,13 +1,24 @@
+import index from './views/index'
+import login from './views/pages/login/login'
+import kanbanlist from './views/pages/kanban/kanban'
+import layout from './views/components/layout/layout'
 const routers = [
     {
         path: '/',
         meta: {title: ''},
-        component: (resolve) => require(['./views/index.vue'], resolve)
+        component: index
     },
     {
         path: '/login',
         meta: {title: ''},
-        component: (resolve) => require(['./views/pages/login/login.vue'], resolve)
+        component:login
+    },
+    {
+        path: '/kanban',
+        component: layout,
+        children: [
+          { path: '/', component: kanbanlist },
+        ]
     }
 ];
 export default routers;

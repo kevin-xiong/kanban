@@ -3,6 +3,7 @@ import iView from 'iview';
 import VueRouter from 'vue-router';
 import Routers from './router';
 import Util from './libs/util';
+import { createStore } from './views/store/'
 import App from './app.vue';
 import 'iview/dist/styles/iview.css';
 
@@ -30,5 +31,6 @@ router.afterEach((to, from, next) => {
 new Vue({
     el: '#app',
     router: router,
+    store: createStore(),
     render: h => h(App)
 });
