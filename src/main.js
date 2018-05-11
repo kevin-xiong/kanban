@@ -5,6 +5,8 @@ import Routers from './router';
 import Util from './libs/util';
 import { createStore } from './views/store/'
 import App from './app.vue';
+// import { sync } from 'vuex-router-sync'
+// import { initAPI } from './views/api'
 import 'iview/dist/styles/iview.css';
 
 Vue.use(VueRouter);
@@ -34,3 +36,16 @@ new Vue({
     store: createStore(),
     render: h => h(App)
 });
+
+// export function createApp () {
+//     const store = createStore()
+//     sync(store, router)
+//     initAPI(router)
+//     const app = new Vue({
+//       el: '#app',
+//       router: router,
+//       store: createStore(),
+//       render: h => h(App)
+//     })
+//     return { app, router, store }
+//   }

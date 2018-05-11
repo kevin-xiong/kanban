@@ -9,7 +9,7 @@ mongoose.connect(config.db, {
 }, (err) => {
   /* istanbul ignore if */
   if (err) {
-    console.error('connect to %s error: ', config.get('db'), err.message)
+    console.error('connect to %s error: ', config.db, err.message)
     process.exit(1)
   }
 })
